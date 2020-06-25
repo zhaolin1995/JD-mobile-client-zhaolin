@@ -1,0 +1,67 @@
+/* 公共样式 */
+html,
+body,
+ul,
+li,
+img,
+a,
+p,
+div,
+input {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 540px;
+    background: #f6f6f6;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666;
+    -webkit-text-size-adjust: 100% !important;
+    padding-bottom: env(safe-area-inset-bottom);
+    
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    /* 清除文本框 获取焦点值的默认边框阴影 */
+    outline: none;
+    /* 去掉边框 */
+    border: none;
+    /* 添加边框 */
+    border: 1px solid #ccc;
+
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
